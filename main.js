@@ -11,3 +11,5 @@ var sentence = "My name is " + name + "\nI am new to typescript";
 console.log(sentence);
 var n = null;
 var u = undefined;
+var isNew = null;
+var myName = undefined;
