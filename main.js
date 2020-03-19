@@ -58,3 +58,20 @@ function add(num1, num2) {
 }
 add(2, 3);
 //cannot do add('10',2)
+//optional parameter: optional is always after the required parameters
+function add2(num1, num2) {
+    if (num2) {
+        return num1 + num2;
+    }
+    return num1;
+}
+add2(2);
+//default parameter is optional parameter with set value or undefined
+function add3(num1, num2) {
+    if (num2 === void 0) { num2 = 10; }
+    if (num2) {
+        return num1 + num2;
+    }
+    return num1;
+}
+add3(2);
