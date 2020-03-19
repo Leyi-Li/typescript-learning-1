@@ -20,3 +20,6 @@ let u: undefined = undefined;
 let isNew: boolean = null;
 let myName: string = undefined;
 
+let list1: number[] = [1,2,3,4];
+let list2: Array<number> = [1,2,3];
+
