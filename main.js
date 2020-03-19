@@ -15,3 +15,4 @@ var isNew = null;
 var myName = undefined;
 var list1 = [1, 2, 3, 4];
 var list2 = [1, 2, 3];
+var person1 = ['Chris', 22];

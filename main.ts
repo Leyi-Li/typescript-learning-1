@@ -23,3 +23,4 @@ let myName: string = undefined;
 let list1: number[] = [1,2,3,4];
 let list2: Array<number> = [1,2,3];
 
+let person1: [string, number] = ['Chris', 22];
