@@ -128,7 +128,9 @@ customer(p2);
 //class, access modifier
 
 class Employee {
-    employeeName: string;
+    //if we change pulic to private, in line 162 it is not accessable, because it is outside of the employee class
+    //if we change pulic to protected, then we can use it within the related classes, not outside of the classes either
+    public employeeName: string;
 
     constructor(name: string) {
         this.employeeName = name;
@@ -159,3 +161,7 @@ let m1 = new Manager('Bruce');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+
+//modifier pulic/ private (access)
+
+

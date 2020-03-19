@@ -133,3 +133,4 @@ var m1 = new Manager('Bruce');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+//modifier pulic/ private (access)
