@@ -27,3 +27,6 @@ var Color;
 var c = Color.Green;
 console.log(c);
 //by default Red is 0, but if {Red = 5, Green, Blue} then c is 6
+var randomValue = 10;
+randomValue = true;
+randomValue = 'Hello';
