@@ -67,7 +67,7 @@ let multiType: number | boolean;
 multiType = 1;
 multiType = false;
 
-function add(num1: number, num2: number){
+function add(num1: number, num2: number) : number{
     return num1 + num2;
 }
 
