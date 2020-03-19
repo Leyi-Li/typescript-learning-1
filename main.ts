@@ -67,5 +67,10 @@ let multiType: number | boolean;
 multiType = 1;
 multiType = false;
 
+function add(num1: number, num2: number){
+    return num1 + num2;
+}
 
+add(2,3);
+//cannot do add('10',2)
 
