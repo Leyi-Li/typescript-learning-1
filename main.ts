@@ -46,5 +46,13 @@ let myValue2: unknown = 10;
 //for unknown we cannot just use it as any
 (myValue2 as string).toUpperCase();
 
+function hasName(obj: any): obj is { name:string } {
+    return !!obj &&
+        typeof obj === 'object' &&
+        'name' in obj
+}
 
+if (hasName(myValue2)) {
+    console.log(myValue2.name);
+}
 

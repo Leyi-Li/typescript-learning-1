@@ -37,3 +37,11 @@ myValue1.toUpperCase();
 var myValue2 = 10;
 //for unknown we cannot just use it as any
 myValue2.toUpperCase();
+function hasName(obj) {
+    return !!obj &&
+        typeof obj === 'object' &&
+        'name' in obj;
+}
+if (hasName(myValue2)) {
+    console.log(myValue2.name);
+}
