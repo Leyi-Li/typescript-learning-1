@@ -56,3 +56,10 @@ if (hasName(myValue2)) {
     console.log(myValue2.name);
 }
 
+let a;
+a = 10;
+a = true;
+
+let b = 20;
+//cannot do b = true; it is assumed to be number type
+

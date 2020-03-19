@@ -45,3 +45,8 @@ function hasName(obj) {
 if (hasName(myValue2)) {
     console.log(myValue2.name);
 }
+var a;
+a = 10;
+a = true;
+var b = 20;
+//cannot do b = true; it is assumed to be number type
