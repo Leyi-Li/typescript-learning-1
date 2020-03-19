@@ -30,3 +30,10 @@ console.log(c);
 var randomValue = 10;
 randomValue = true;
 randomValue = 'Hello';
+var myValue1 = 10;
+console.log(myValue1.name);
+myValue1();
+myValue1.toUpperCase();
+var myValue2 = 10;
+//for unknown we cannot just use it as any
+myValue2.toUpperCase();

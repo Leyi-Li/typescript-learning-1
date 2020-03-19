@@ -37,4 +37,14 @@ let randomValue: any = 10;
 randomValue = true;
 randomValue = 'Hello';
 
+let myValue1: any = 10;
+console.log(myValue1.name);
+myValue1();
+myValue1.toUpperCase();
+
+let myValue2: unknown = 10;
+//for unknown we cannot just use it as any
+(myValue2 as string).toUpperCase();
+
+
 
