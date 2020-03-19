@@ -25,3 +25,10 @@ let list2: Array<number> = [1,2,3];
 
 //[22, 'Chris'] or ['Chris', 22, 23] will not work
 let person1: [string, number] = ['Chris', 22];
+
+enum Color {Red, Green, Blue};
+
+let c: Color = Color.Green;
+console.log(c);
+
+//by default Red is 0, but if {Red = 5, Green, Blue} then c is 6

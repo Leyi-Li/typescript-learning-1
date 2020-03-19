@@ -17,3 +17,13 @@ var list1 = [1, 2, 3, 4];
 var list2 = [1, 2, 3];
 //[22, 'Chris'] or ['Chris', 22, 23] will not work
 var person1 = ['Chris', 22];
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+;
+var c = Color.Green;
+console.log(c);
+//by default Red is 0, but if {Red = 5, Green, Blue} then c is 6
