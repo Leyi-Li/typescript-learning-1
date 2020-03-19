@@ -15,4 +15,5 @@ var isNew = null;
 var myName = undefined;
 var list1 = [1, 2, 3, 4];
 var list2 = [1, 2, 3];
+//[22, 'Chris'] or ['Chris', 22, 23] will not work
 var person1 = ['Chris', 22];
