@@ -32,11 +32,11 @@ randomValue = true;
 randomValue = 'Hello';
 var myValue1 = 10;
 console.log(myValue1.name);
-myValue1();
-myValue1.toUpperCase();
+//myValue1();
+//myValue1.toUpperCase();
 var myValue2 = 10;
 //for unknown we cannot just use it as any
-myValue2.toUpperCase();
+//(myValue2 as string).toUpperCase();
 function hasName(obj) {
     return !!obj &&
         typeof obj === 'object' &&
@@ -75,3 +75,20 @@ function add3(num1, num2) {
     return num1;
 }
 add3(2);
+function fullName(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+var p = {
+    firstName: 'Bruce',
+    lastName: 'Lee'
+};
+fullName(p);
+function customer(person) {
+    console.log("Name: " + person.firstName + " " + person.lastName + ", phone: " + person.phoneNumber);
+}
+var p2 = {
+    firstName: 'leyi',
+    lastName: 'li',
+    phoneNumber: 202
+};
+customer(p2);

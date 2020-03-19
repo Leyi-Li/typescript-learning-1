@@ -39,12 +39,12 @@ randomValue = 'Hello';
 
 let myValue1: any = 10;
 console.log(myValue1.name);
-myValue1();
-myValue1.toUpperCase();
+//myValue1();
+//myValue1.toUpperCase();
 
 let myValue2: unknown = 10;
 //for unknown we cannot just use it as any
-(myValue2 as string).toUpperCase();
+//(myValue2 as string).toUpperCase();
 
 function hasName(obj: any): obj is { name:string } {
     return !!obj &&
@@ -94,3 +94,33 @@ function add3(num1: number, num2: number = 10) : number{
 }
 
 add3(2);
+
+function fullName(person: {firstName: string, lastName: string}) {
+    console.log(`${person.firstName} ${person.lastName}`);
+}
+
+let p = {
+    firstName: 'Bruce',
+    lastName: 'Lee'
+}
+
+fullName(p);
+
+//interface
+
+interface Person{
+    firstName: string;
+    lastName: string;
+    phoneNumber: number;
+}
+function customer(person: Person) {
+    console.log(`Name: ${person.firstName} ${person.lastName}, phone: ${person.phoneNumber}`);
+}
+
+let p2 = {
+    firstName: 'leyi',
+    lastName: 'li',
+    phoneNumber: 202
+};
+
+customer(p2);
