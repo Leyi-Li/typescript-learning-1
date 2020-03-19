@@ -92,3 +92,16 @@ var p2 = {
     phoneNumber: 202
 };
 customer(p2);
+//class, access modifier
+var Employee = /** @class */ (function () {
+    function Employee(name) {
+        this.employeeName = name;
+    }
+    Employee.prototype.greet = function () {
+        console.log("hello " + this.employeeName);
+    };
+    return Employee;
+}());
+var emp1 = new Employee('Leyla');
+console.log(emp1.employeeName);
+emp1.greet();

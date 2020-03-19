@@ -110,7 +110,7 @@ fullName(p);
 
 interface Person{
     firstName: string;
-    lastName: string;
+    lastName?: string;
     phoneNumber: number;
 }
 function customer(person: Person) {
@@ -124,3 +124,22 @@ let p2 = {
 };
 
 customer(p2);
+
+//class, access modifier
+
+class Employee {
+    employeeName: string;
+
+    constructor(name: string) {
+        this.employeeName = name;
+    }
+
+    greet() {
+        console.log(`hello ${this.employeeName}`);
+    }
+}
+
+let emp1 = new Employee('Leyla');
+console.log(emp1.employeeName);
+emp1.greet();
+
